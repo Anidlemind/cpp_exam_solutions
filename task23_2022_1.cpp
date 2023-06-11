@@ -18,7 +18,8 @@ class Grandson: public Son, public Daughter {};
 
 // this shithead somehow weights 16 bytes, but... why?
 // well, my guess would be: it derives Son which is 8 and SOMEHOW it does not
-// consider Daughter an empty class so it adds 1. After all that the byte alignment
+// consider Daughter an empty class (maybe, just maybe - multiple derivation is an exception from that rule)
+// so it adds 1. After all that the byte alignment
 // kicks in and adds the remaining 7 to be a multiple of 8
 
 // Derivation looks like this:
