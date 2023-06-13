@@ -26,4 +26,4 @@ int main() {
            // then destroys it: ~B ~A
 } // Finally : all the other destructors : ~C ~A ~B ~A
 
-// answer : ABAC~B~A~C~A~C
+// answer : ABAC~B~A~C~A~B~A
